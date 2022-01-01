@@ -22,9 +22,9 @@
         <div class="inpt">
             <label>Enter RGB Values 0 to 255:</label>
             <br/>
-            <input type="number" id="red" name="red" value="204">
-            <input type="number" id="green" name="green" value="0">
-            <input type="number" id="blue" name="blue" value="255">
+            <input type="number" id="red" name="red" value="${red}">
+            <input type="number" id="green" name="green" value="${green}">
+            <input type="number" id="blue" name="blue" value="${blue}">
             <br/>
             <button class="btn">Submit</button>
         </div>

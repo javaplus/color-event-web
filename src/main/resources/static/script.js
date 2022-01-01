@@ -4,7 +4,7 @@ let blue = document.getElementById('blue');
 let box = document.querySelector('div.neumorphism-3');
 
 
-let r = 204, g = 0, b = 255;
+let r = red.value, g = green.value, b = blue.value;
 box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
 red.addEventListener("keyup", function (event) {

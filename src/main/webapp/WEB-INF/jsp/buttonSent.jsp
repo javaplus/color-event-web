@@ -6,7 +6,7 @@
 <title>Color Message was sent!</title>
 </head>
 <body>
-  <h1>Color message was sent!</h1>
+  <h1>Color message was sent! ${red},${green},${blue}</h1>
 </body>
 
 
@@ -14,7 +14,7 @@
     // Using ES6 feature.
     let redirect_Page = () => {
         let tID = setTimeout(function () {
-            window.location.href = "/";
+            window.location.href = "/gobutton?red=${red}&green=${green}&blue=${blue}";
             window.clearTimeout(tID);		// clear time out.
         }, 1000);
     }

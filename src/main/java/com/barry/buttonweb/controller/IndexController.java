@@ -9,7 +9,11 @@ public class IndexController {
     
     @RequestMapping("/")
     public ModelAndView index(){
-        System.out.println("Routing to start");
-        return new ModelAndView("start");
+
+        ModelAndView mv = new ModelAndView("start");
+        mv.addObject("red", 200);
+        mv.addObject("green", 0);
+        mv.addObject("blue", 255);
+        return mv;
     }
 }

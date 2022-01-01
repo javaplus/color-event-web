@@ -20,8 +20,25 @@ public class ButtonController {
         System.out.println("Button color=" + color);
 
         colorEventService.sendMessage(color);
-        
-        return new ModelAndView("buttonSent");
+        ModelAndView mv = new ModelAndView("buttonSent");
+
+        mv.addObject("red", red);
+        mv.addObject("green", green);
+        mv.addObject("blue", blue);
+        return mv;
+    }
+
+    @GetMapping("/gobutton")
+    public ModelAndView goButton(int red, int green, int blue){
+        String color = red + "," + green + "," + blue;
+        System.out.println("Sent Button color=" + color);
+
+        ModelAndView mv = new ModelAndView("start");
+
+        mv.addObject("red", red);
+        mv.addObject("green", green);
+        mv.addObject("blue", blue);
+        return mv;
     }
 
 
