@@ -1,0 +1,11 @@
+version: "3"
+services:
+  kafka-button:
+    image: 'javaplus/kafka-button:latest'
+    container_name: kafka-button
+    ports:
+      - '80:8080'
+    environment:
+      - kafkaKey=<key here>
+      - kafkaSecret=<secret here>
+    
