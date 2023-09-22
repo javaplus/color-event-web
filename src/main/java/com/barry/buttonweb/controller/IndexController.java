@@ -10,8 +10,7 @@ public class IndexController {
     
     @GetMapping("/")
     public ModelAndView index(){
-        System.out.println("In root mapping");
-
+        
         ModelAndView mv = new ModelAndView("start");
         mv.addObject("red", 200);
         mv.addObject("green", 0);
